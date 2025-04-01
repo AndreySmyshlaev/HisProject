@@ -1,13 +1,137 @@
 <!DOCTYPE html>
 
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>новостной исторический сайт</title>
 </head>
+
 <body>
-    
-    
+    <header class="header">
+            <img class="header__image" src="images/logo.jpg" alt="Логотип" width="30" height="30">
+            <button class="header__button" type="button">вход</button>
+            <button class="header__button" type="button">настроки</button>
+    </header>
+
+    <main class="main">
+        <section class="search">
+            <img class="search__image" src="images/main_menu.jpg" alt="Главное меню" width="1125" height="750">
+            <h1 class="search__title">HISTORIA</h1>
+            <form class="search__form" action="/" method="get">
+                <input class="search__input" type="search" name="text" placeholder="Название статьи">
+                <input class="search__input" type="submit" value="Поиск">
+            </form>
+        </section>
+        <section class="navigation">
+            <button class="navigation__button" type="button">новое</button>
+            <button class="navigation__button" type="button">популярное</button>
+            <button class="navigation__button" type="button">для вас</button>
+        </section>
+        <section class="articles">
+            <ul class="articles__menu">
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/peter_i.jpg" alt="Петр I" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Петр I</h2>
+                </li>
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/ivan_iv.jpg" alt="Иван Грозный" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Иван Грозный</h2>
+                </li>
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/alexey_mikhailovich.jpg" alt="Алексей Михайлович" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Алексей Михайлович</h2>
+                </li>
+            </ul>
+            <ul class="articles__menu">
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/catherine_ii.jpg" alt="Екатерина II" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Екатерина II</h2>
+                </li>
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/alexander_i.jpg" alt="Александр I" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Александр I</h2>
+                </li>
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/dmitry_donskoy.jpg" alt="Дмитрий Донской" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Дмитрий Донской</h2>
+                </li>
+            </ul>
+            <ul class="articles__menu">
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/nikolay_ii.jpg" alt="Николай II" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Николай II</h2>
+                </li>
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/alexander_ii.jpg" alt="Александр II" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Александр II</h2>
+                </li>
+                <li class="articles__item">
+                    <a class="articles__link" href="#">
+                        <img class="articles__images" src="images/ivan_i.jpg" alt="Иван Калита" width="300" height="300">
+                    </a>
+                    <h2 class="articles__name">Иван Калита</h2>
+                </li>
+            </ul>
+            <button class="articles__button">еще</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__logo"> ©Historia 2025</p>
+        <ul class="footer__menu">
+            <li class="footer__item">
+                <a class="footer__link" href="#">
+                    <img class="footer__images" src="images/icon_vk.jpg" alt="ВКонтакте" width="30" height="30">
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">
+                    <img class="footer__images" src="images/icon_telegram.jpg" alt="Телеграм" width="30" height="30">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="registration">
+        <section class="form">
+            <form class="form__action" action="/">
+                <h2 class="form__title">Вход в личный кабинет</h2>
+                <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
+                <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+                <button class="form__button">Войти</button>
+                <button class="form__button">Отмена</button>
+                <button class="form__button">Нет аккаунта</button>
+            </form>
+        </section>
+        <section class="form">
+            <form class="form__action" action="/">
+                <h2 class="form__title">Регистрация</h2>
+                <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
+                <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+                <button class="form__button">Зарегистрироваться</button>
+                <button class="form__button">Отмена</button>
+                <button class="form__button">Есть аккаунт</button>
+            </form>
+        </section>
+    </div>
 </body>
+
 </html>
