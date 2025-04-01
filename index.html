@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>новостной исторический сайт</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
             <img class="header__image" src="images/logo.jpg" alt="Логотип" width="30" height="30">
-            <button class="header__button" type="button">вход</button>
-            <button class="header__button" type="button">настроки</button>
+            <button class="header__button button" type="button">вход</button>
+            <button class="header__button button" type="button">настройки</button>
     </header>
 
-    <main class="main">
+    <main class="main container">
         <section class="search">
-            <img class="search__image" src="images/main_menu.jpg" alt="Главное меню" width="1125" height="750">
             <h1 class="search__title">HISTORIA</h1>
             <form class="search__form" action="/" method="get">
                 <input class="search__input" type="search" name="text" placeholder="Название статьи">
-                <input class="search__input" type="submit" value="Поиск">
+                <input class="search__input button" type="submit" value="Поиск">
             </form>
         </section>
         <section class="navigation">
-            <button class="navigation__button" type="button">новое</button>
-            <button class="navigation__button" type="button">популярное</button>
-            <button class="navigation__button" type="button">для вас</button>
+            <button class="navigation__button button" type="button">новое</button>
+            <button class="navigation__button button" type="button">популярное</button>
+            <button class="navigation__button button" type="button">для вас</button>
         </section>
         <section class="articles">
             <ul class="articles__menu">
@@ -94,7 +93,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
         <p class="footer__logo"> ©Historia 2025</p>
         <ul class="footer__menu">
             <li class="footer__item">
@@ -116,9 +115,9 @@
                 <h2 class="form__title">Вход в личный кабинет</h2>
                 <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
                 <input class="form__input" type="password" name="password" placeholder="Пароль" required>
-                <button class="form__button">Войти</button>
-                <button class="form__button">Отмена</button>
-                <button class="form__button">Нет аккаунта</button>
+                <button class="form__button button">Войти</button>
+                <button class="form__button button">Отмена</button>
+                <button class="form__button button">Нет аккаунта</button>
             </form>
         </section>
         <section class="form">
@@ -126,9 +125,9 @@
                 <h2 class="form__title">Регистрация</h2>
                 <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
                 <input class="form__input" type="password" name="password" placeholder="Пароль" required>
-                <button class="form__button">Зарегистрироваться</button>
-                <button class="form__button">Отмена</button>
-                <button class="form__button">Есть аккаунт</button>
+                <button class="form__button button">Зарегистрироваться</button>
+                <button class="form__button button">Отмена</button>
+                <button class="form__button button">Есть аккаунт</button>
             </form>
         </section>
     </div>
