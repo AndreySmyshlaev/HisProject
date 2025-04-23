@@ -1,26 +1,33 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>новостной исторический сайт</title>
+    <title>HISTORIA</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header class="header container">
-            <img class="header__image" src="images/logo.jpg" alt="Логотип" width="30" height="30">
+        <div class="header__logo-wrap">
+            <img class="header__image" src="images/logo.png" alt="Логотип" width="50" height="50">
+            <h1 class="header__logo">HISTORIA</h1>
+        </div>
+        <div class="header__buttons">
             <button class="header__button button" type="button">вход</button>
             <button class="header__button button" type="button">настройки</button>
+        </div>
     </header>
 
     <main class="main container">
         <section class="search">
-            <h1 class="search__title">HISTORIA</h1>
+            <h1 class="search__title">новостной исторический сайт</h1>
             <form class="search__form" action="/" method="get">
                 <input class="search__input" type="search" name="text" placeholder="Название статьи">
-                <input class="search__input button" type="submit" value="Поиск">
+                <input class=" button" type="submit" value="Поиск">
             </form>
         </section>
         <section class="navigation">
@@ -29,81 +36,77 @@
             <button class="navigation__button button" type="button">для вас</button>
         </section>
         <section class="articles">
-            <ul class="articles__menu">
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/peter_i.jpg" alt="Петр I" width="300" height="300">
-                    </a>
+            <div class="articles__menu">
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/peter_i.jpg" alt="Петр I" width="300" height="300">
                     <h2 class="articles__name">Петр I</h2>
-                </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/ivan_iv.jpg" alt="Иван Грозный" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/ivan_iv.jpg" alt="Иван Грозный" width="300" height="300">
                     <h2 class="articles__name">Иван Грозный</h2>
-                </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/alexey_mikhailovich.jpg" alt="Алексей Михайлович" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/alexey_mikhailovich.jpg" alt="Алексей Михайлович"
+                        width="300" height="300">
                     <h2 class="articles__name">Алексей Михайлович</h2>
-                </li>
-            </ul>
-            <ul class="articles__menu">
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/catherine_ii.jpg" alt="Екатерина II" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+            </div>
+            <div class="articles__menu">
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/catherine_ii.jpg" alt="Екатерина II" width="300"
+                        height="300">
                     <h2 class="articles__name">Екатерина II</h2>
-                </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/alexander_i.jpg" alt="Александр I" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/alexander_i.jpg" alt="Александр I" width="300"
+                        height="300">
                     <h2 class="articles__name">Александр I</h2>
-                </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/dmitry_donskoy.jpg" alt="Дмитрий Донской" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/dmitry_donskoy.jpg" alt="Дмитрий Донской" width="300"
+                        height="300">
                     <h2 class="articles__name">Дмитрий Донской</h2>
-                </li>
-            </ul>
-            <ul class="articles__menu">
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/nikolay_ii.jpg" alt="Николай II" width="300" height="300">
-                    </a>
-                    <h2 class="articles__name">Николай II</h2>
-                </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/alexander_ii.jpg" alt="Александр II" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+            </div>
+            <div class="articles__menu link">
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/alexander_ii.jpg" alt="Александр II" width="300"
+                        height="300">
                     <h2 class="articles__name">Александр II</h2>
-                </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">
-                        <img class="articles__images" src="images/ivan_i.jpg" alt="Иван Калита" width="300" height="300">
-                    </a>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/nikolay_ii.jpg" alt="Николай II" width="300" height="300">
+                    <h2 class="articles__name">Николай II</h2>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+                <a class="articles__item" href="#">
+                    <img class="articles__images" src="images/ivan_i.jpg" alt="Иван Калита" width="300" height="300">
                     <h2 class="articles__name">Иван Калита</h2>
-                </li>
-            </ul>
+                    <p class="articles__text">rfghgfdsghjhgfd dfg dfgf апрпа уваds sdfds sdfds asddsa dfg</p>
+                </a>
+            </div>
             <button class="articles__button">еще</button>
         </section>
     </main>
 
     <footer class="footer container">
-        <p class="footer__logo"> ©Historia 2025</p>
+        <p class="footer__logo"> © Historia 2025</p>
         <ul class="footer__menu">
             <li class="footer__item">
                 <a class="footer__link" href="#">
-                    <img class="footer__images" src="images/icon_vk.jpg" alt="ВКонтакте" width="30" height="30">
+                    <img class="footer__images" src="images/icon_vk.jpg" alt="ВКонтакте" width="45" height="45">
                 </a>
             </li>
             <li class="footer__item">
                 <a class="footer__link" href="#">
-                    <img class="footer__images" src="images/icon_telegram.jpg" alt="Телеграм" width="30" height="30">
+                    <img class="footer__images" src="images/icon_telegram.jpg" alt="Телеграм" width="45" height="45">
                 </a>
             </li>
         </ul>
@@ -111,26 +114,35 @@
 
     <div class="registration">
         <section class="form">
-            <form class="form__action" action="/">
-                <h2 class="form__title">Вход в личный кабинет</h2>
+            <div class="form__action">
+                <h2 class="form__title-one">ВХОД</h2>
+                <a class="form__link" href="#">
+                    <img class="form__images" src="images/dont_log_in.jpg" alt="Отмена" width="45" height="45">
+                </a>
+            </div>
+            <div class="form__input-wrap">
                 <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
                 <input class="form__input" type="password" name="password" placeholder="Пароль" required>
                 <button class="form__button button">Войти</button>
-                <button class="form__button button">Отмена</button>
                 <button class="form__button button">Нет аккаунта</button>
-            </form>
+            </div>
         </section>
         <section class="form">
-            <form class="form__action" action="/">
-                <h2 class="form__title">Регистрация</h2>
+            <div class="form__action">
+                <h2 class="form__title-two">РЕГИСТРАЦИЯ</h2>
+                <a class="form__link" href="#">
+                    <img class="form__images" src="images/dont_log_in.jpg" alt="Отмена" width="45" height="45">
+                </a>
+            </div>
+            <div class="form__input-wrap">
                 <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
                 <input class="form__input" type="password" name="password" placeholder="Пароль" required>
                 <button class="form__button button">Зарегистрироваться</button>
-                <button class="form__button button">Отмена</button>
                 <button class="form__button button">Есть аккаунт</button>
-            </form>
+            </div>
         </section>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

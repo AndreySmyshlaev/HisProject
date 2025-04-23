@@ -1,0 +1,48 @@
+.search {
+    background-image: url('../images/main_menu.jpg');
+    background-size: cover;
+    height: 650px;
+    text-align: center;
+    padding-top: 225px;
+}
+
+.search__title {
+    color: #fff;
+    font-size: 48px;
+}
+
+.search__input {
+    width: 400px;
+    height: 42px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: #ffffff;
+    outline: 1px solid transparent;
+}
+
+.articles__item {
+    transition: transform 0.3s;
+}
+
+.articles__item:hover {
+    transform: scale(1.02);
+}
+
+.button {
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(0.95);
+}
+
+.articles__button {
+    transition: transform 0.3s;
+}
+
+.articles__button:hover {
+    transform: scale(0.95);
+}
+
+
+

@@ -1,19 +1,19 @@
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat-Regular";
     src: url("HISPROJECT/fonts/Montserrat-Regular.woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
     }
     @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat-SemiBold";
     src: url("HISPROJECT/fonts/Montserrat-SemiBold.woff2");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
     }
     @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat-Italic";
     src: url("HISPROJECT/fonts/Montserrat-Italic.woff2");
     font-weight: normal;
     font-style: italic;

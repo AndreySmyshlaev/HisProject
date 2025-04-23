@@ -1,0 +1,66 @@
+.footer{
+    background-color: #353535;
+    display: flex;
+}
+
+.footer__menu{
+    display: flex;
+    padding-left: 1010px;
+}
+
+.footer__item{
+    margin: 0px 0px 50px 25px;
+    list-style-type: none;
+}
+
+.footer__logo{
+    margin: 15px 0px 0px 10px;
+    color: #ffffff;
+}
+
+
+.registration{
+    background-color: #ffffff;
+}
+
+.form{
+    width: 550px;
+    height: 350px;
+    box-shadow: 1px 2px 20px 5px #1a1919;
+}
+
+.form__action{
+    display: flex;
+}
+
+.form__input-wrap{
+    display: grid;
+}
+
+.form__input{
+    width: 400px;
+    height: 42px;
+    border-radius: 4px;
+    border-color: #000000;
+    background-color: #ffffff;
+    outline: 1px solid transparent;
+    margin: 15px 80px 0px 80px;
+}
+
+.form__button{
+    margin: 15px 150px 0px 150px;
+}
+
+.form__title-one{
+    color: #0178BC;
+    margin: 21px 183px 0px 255px;
+}
+
+.form__title-two{
+    color: #0178BC;
+    margin: 21px 135px 0px 192px;
+}
+
+.form__link{
+    margin: 0px 0px 0px 0px;
+}

@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+    .articles__button {
+        margin: 30px 600px 30px 465px;
+    }
+    .header__buttons{
+        margin-right: 50px;
+    }
+    .footer__menu{
+        padding-left: 700px;
+    }
+
+
+}
+
+
+
+
