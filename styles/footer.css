@@ -1,43 +1,90 @@
-.footer{
+.footer {
     background-color: #353535;
     display: flex;
 }
 
-.footer__menu{
+.footer__menu {
     display: flex;
     padding-left: 1010px;
 }
 
-.footer__item{
+.footer__item {
     margin: 0px 0px 50px 25px;
     list-style-type: none;
 }
 
-.footer__logo{
+.footer__logo {
     margin: 15px 0px 0px 10px;
     color: #ffffff;
 }
 
-
-.registration{
+.registration-one {
     background-color: #ffffff;
+    position: fixed;
+    /* позицинорование фиксированное */
+    top: 0;
+    /* Элемент будет находиться на верхней границе экрана*/
+    left: 0;
+    /* Элемент будет находиться на левой границе экрана.*/
+    width: 100%;
+    /* Ширина 100% от окна браузера */
+    height: 100%;
+    /* Высота 100% от окна браузера */
+    background-color: rgba(58, 60, 65, 0.7);
+    /*задаем фон Полупрозрачный с цветом */
 }
 
-.form{
+.registration-two {
+    background-color: #ffffff;
+    position: fixed;
+    /* позицинорование фиксированное */
+    top: 0;
+    /* Элемент будет находиться на верхней границе экрана*/
+    left: 0;
+    /* Элемент будет находиться на левой границе экрана.*/
+    width: 100%;
+    /* Ширина 100% от окна браузера */
+    height: 100%;
+    /* Высота 100% от окна браузера */
+    background-color: rgba(58, 60, 65, 0.7);
+    /*задаем фон Полупрозрачный с цветом */
+}
+
+.form {
+    position: absolute;
+    /* позиционируется абсолютно*/
+    top: 50%;
+    /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%;
+    /*левая граница смещена на 50% ширины родителя*/
+    transform: translate(-50%, -50%);
+    /* смещаем элемент относительно его текущего положения*/
+    max-width: 800px;
     width: 550px;
     height: 350px;
-    box-shadow: 1px 2px 20px 5px #1a1919;
+    background-color: rgb(249, 249, 250);
 }
 
-.form__action{
+.form__action-one {
     display: flex;
 }
 
-.form__input-wrap{
+.form__action-two {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.form__input-wrap-one { 
     display: grid;
 }
 
-.form__input{
+.form__input-wrap-two { 
+    display: grid;
+    margin: 55px 0px 0px -550px;
+}
+
+.form__input {
     width: 400px;
     height: 42px;
     border-radius: 4px;
@@ -47,20 +94,28 @@
     margin: 15px 80px 0px 80px;
 }
 
-.form__button{
+.form__button {
     margin: 15px 150px 0px 150px;
 }
 
-.form__title-one{
+.form__title-one {
     color: #0178BC;
-    margin: 21px 183px 0px 255px;
+    margin: 20px 183px 0px 240px;
 }
 
-.form__title-two{
+.form__title-two {
     color: #0178BC;
-    margin: 21px 135px 0px 192px;
+    margin: 20px 123px 0px 190px;
 }
 
-.form__link{
+.form__link {
     margin: 0px 0px 0px 0px;
+}
+
+.application__close-one {
+    background-color: #0178BC;
+}
+
+.application__close-two {
+    background-color: #0178BC;
 }
