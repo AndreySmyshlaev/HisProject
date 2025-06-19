@@ -16,8 +16,11 @@ html,
     font-family: 'Montserrat', Arial, sans-serif;
     line-height: 28px;
     color: black;
-    background-color: #0178BC;
     overflow-x: hidden;
+}
+
+.main {
+    background-color: #0178BC;
 }
 
 .img {
@@ -110,3 +113,45 @@ html,
     font-size: 13px;
 }
 
+.content {
+    display: none;
+}
+
+.preloader {
+    padding-top: 25%;
+    background: #fefefb;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.loader span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #0178BC;
+  margin: 35px5px;
+}
+.dot1 {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.dot2{
+    animation: bounce 1s ease-in-out 0.30s infinite;
+}
+
+.dot3 {
+    animation: bounce 1s ease-in-out 0.60s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    75%,
+    100% {
+        transform: translateY(0);
+   }
+
+    25% {
+       transform: translateY(-30px);
+   }
+}

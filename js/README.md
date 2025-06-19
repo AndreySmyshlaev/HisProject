@@ -18,185 +18,120 @@
 
 
 
+// * Код для массива (Задание 3.4)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-display: none;
-
-const intensiveImg = document.querySelector(".header__button");
-document.addEventListener('click', () => {
-    
-});
-
-
-
-
-
-
-
-const modal = document.querySelector ();
-const btn = document.querySelector ("header__button");
-const close = document.querySelector ();
-
-
-
-const modal = document.querySelector('#modal');
-const btn = document.querySelector('#openModal');
-const close = document.querySelector('.close');
-
-btn.onclick = function () {
-  modal.style.display = 'block';
-};
-
-close.onclick = function () {
-  modal.style.display = 'none';
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
-
-
-box-shadow: 1px 2px 20px 5px #1a1919; тень
-
-
-
-    
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.4);
-
-
-    background-color: #ffffff;
-    margin: 100px auto;
-    padding: 20px;
-    width: 50%;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between; 
-
-
-
-
-<a class="form__link" href="#">
-
-.form__images {
-    position: absolute;
-    /* позиционируется абсолютно*/
-    top: 0;
-    /* Элемент будет находиться на верхней границе родителя*/
-    right: 0;
-    /* элемент будет прижат к правой стороне родителя */
-    padding: 10px;
-    /* Внутренние отступы с каждой стороны 10px*/
-}
-
-background-color:
-
-
-
-
-if (titlesContainer) {
-    const dataTitleCard = [
-        "Иван",
-        "Петр",
-        "Сигизмунд",
-        "Лука",
-        "Моисей",
-        "Иосиф",
-        "Колян",
-        "Толян",
-        "Мулат",
-    ];
-
-    const titleCard =
-        titlesContainer.querySelectorAll("articles__name");
-
-        titleCard.forEach((Петр I, index) => {
-        item.Сильвестр = dataTitleCard [index];
-        });
-}
-
+const articlesContainer = document.querySelector(".articles");
 
 if (articlesContainer) {
-    const dataTitleArticles= [
-        "Иван",
-        "Петр",
-        "Сигизмунд",
-        "Лука",
-        "Моисей",
-        "Иосиф",
-        "Колян",
-        "Толян",
-        "Мулат",
+    const dataTitleArticles = [
+        "Ацтеки",
+        "Русская правда",
+        "Каравелла",
+        "Рюрик",
+        "Драккар",
+        "Пикты",
+        "Император Константин",
+        "Леон Блюм",
+        "Семилетняя война",
+        "Отто фон Бисмарк",
+        "Владимир Ленин",
+        "Японская империя",
+        "Октябрьская революция",
+        "Екатерина I",
+        "Тевтонский орден",
+        "Гангутское сражение",
+        "Цусимское сражение",
     ];
-        
+
     const TitleArticles =
         articlesContainer.querySelectorAll(".articles__name");
 
-        TitleArticles.forEach((item, index) => {
-        item.textContent = dataTitleArticles [index];
-        });
+    TitleArticles.forEach((item, index) => {
+        item.textContent = dataTitleArticles[index];
+    });
 }
 
 
 
+// * Код для объекта (Задание 3.5)
 
+const articles = document.querySelector(".articles");
+if (articles) {
+    const articlesMenu = articles.querySelector(".articles__menu");
 
+    const articlesData1 = {
+        articles1: {
+            images: "images/atsteki.jpg",
+            name: "Ацтеки",
+            text: "Мезоамериканская культура народа науа, процветавшая в центральной Мексике в постклассический период с 1300 по 1521 год.",
+        },
+    }
 
+    const articlesData2 = {
+        articles2: {
+            images: "images/russ_pravda.jpg",
+            name: "Русская правда",
+            text: "Сборник правовых норм Киевской Руси, датированный различными годами, начиная с 1016 года, древнейший русский правовой кодекс.",
+        },
+    }
 
+    const articlesData3 = {
+        articles3: {
+            images: "images/caravella.webp",
+            name: "Каравелла",
+            text: "Тип парусного судна, распространённый в Европе, особенно в Португалии и Испании, во второй половине XV — начале XVII века.",
+        },
+    }
 
+    const createCard1 = (images, name, text)  => {
+        const card = `
+        <a class="articles__item all" href="#">
+            <img class="articles__images" src="${images}" alt="Фото" width="300" height="300">
+            <h2 class="articles__name">${name}</h2>
+            <p class="articles__text">${text}</p>
+        </a>
+    `;
+        return card;
+    }
 
-function filter() {
-    navigationButton.addEventListener("click", event => {
-        const targetId = event.target.dataset.id
-        console.log(targetId)
+    const createCard2 = (images, name, text)  => {
+        const card = `
+        <a class="articles__item all" href="#">
+            <img class="articles__images" src="${images}" alt="Фото" width="300" height="300">
+            <h2 class="articles__name">${name}</h2>
+            <p class="articles__text">${text}</p>
+        </a>
+    `;
+        return card;
+    }
 
-        switch (targetId) {
-            case "all":
-                break
+    const createCard3 = (images, name, text)  => {
+        const card = `
+        <a class="articles__item all" href="#">
+            <img class="articles__images" src="${images}" alt="Фото" width="300" height="300">
+            <h2 class="articles__name">${name}</h2>
+            <p class="articles__text">${text}</p>
+        </a>
+    `;
+        return card;
+    }
 
-            case "new":
-                articlesItem.forEach(item => {
-                    if (item.classList.contains("new")) {
-                        item.style.display = "block"
-                    } else {
-                        item.style.display = "none"
-                    }
-                })
-                break
+    for (const cardKey in articlesData1) {
+        const card = articlesData1[cardKey];
+        const cardElement = createCard1(card.images, card.name, card.text);
+        articlesMenu.insertAdjacentHTML('beforeend', cardElement);
+    }
 
-            case "pop":
-                articlesItem.forEach(item => {
-                    if (item.classList.contains("pop")) {
-                        item.style.display = "block"
-                    } else {
-                        item.style.display = "none"
-                    }
-                })
-                break
+    for (const cardKey in articlesData2) {
+        const card = articlesData2[cardKey];
+        const cardElement = createCard2(card.images, card.name, card.text);
+        articlesMenu.insertAdjacentHTML('beforeend', cardElement);
+    }
 
-        }
-    })
+    for (const cardKey in articlesData3) {
+        const card = articlesData3[cardKey];
+        const cardElement = createCard3(card.images, card.name, card.text);
+        articlesMenu.insertAdjacentHTML('beforeend', cardElement);
+    }
+
 }
-
-filter()

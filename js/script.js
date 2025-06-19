@@ -71,39 +71,8 @@ exitModalButton.addEventListener("click", () => {
 
 
 
-// * Код для массива (название статей)
-
-const articlesContainer = document.querySelector(".articles");
-
-if (articlesContainer) {
-    const dataTitleArticles = [
-        "Ацтеки",
-        "Русская правда",
-        "Каравелла",
-        "Рюрик",
-        "Драккар",
-        "Пикты",
-        "Император Константин",
-        "Леон Блюм",
-        "Семилетняя война",
-        "Отто фон Бисмарк",
-        "Владимир Ленин",
-        "Японская империя",
-        "Октябрьская революция",
-        "Екатерина I",
-        "Тевтонский орден",
-        "Гангутское сражение",
-        "Цусимское сражение",
-        "Танк КВ-2",
-    ];
-
-    const TitleArticles =
-        articlesContainer.querySelectorAll(".articles__name");
-
-    TitleArticles.forEach((item, index) => {
-        item.textContent = dataTitleArticles[index];
-    });
-}
+// * Код для массива (название статей) (Задание 3.4)
+// * УБРАН В СВЯЗИ С НЕНАДОБНОСТЬЮ В README.MD
 
 
 
@@ -158,8 +127,72 @@ filter()
 
 const articles = document.querySelector(".articles");
 if (articles) {
+    const articlesMenu = articles.querySelector(".articles__menu");
 
+    const articlesData = {
+        articles1: {
+            images: "images/atsteki.jpg",
+            name: "Ацтеки",
+            text: "Мезоамериканская культура народа науа, процветавшая в центральной Мексике в постклассический период с 1300 по 1521 год.",
+        },
+        articles2: {
+            images: "images/russ_pravda.jpg",
+            name: "Русская правда",
+            text: "Сборник правовых норм Киевской Руси, датированный различными годами, начиная с 1016 года, древнейший русский правовой кодекс.",
+        },
+        articles3: {
+            images: "images/caravella.webp",
+            name: "Каравелла",
+            text: "Тип парусного судна, распространённый в Европе, особенно в Португалии и Испании, во второй половине XV — начале XVII века.",
+        },
+    }
 
+    const createCard = (images, name, text) => {
+        const card = `
+        <a class="articles__item all" href="#">
+            <img class="articles__images" src="${images}" alt="Фото" width="300" height="300">
+            <h2 class="articles__name">${name}</h2>
+            <p class="articles__text">${text}</p>
+        </a>
+    `;
+        return card;
+    }
 
+    for (const cardKey in articlesData) {
+        const card = articlesData[cardKey];
+        const cardElement = createCard(card.images, card.name, card.text);
+        articlesMenu.insertAdjacentHTML('beforeend', cardElement);
+    }
 }
 
+// * Код для предзагрузчика
+
+const preloader = document.querySelector(".preloader");
+const content = document.querySelector(".content");
+if (preloader && content) {
+    setTimeout(() => {
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+        content.style.display = "block";
+        preloader.remove();
+    }, 3000);
+}
+
+
+
+// * Код для карусели
+
+const sliders = document.querySelector('.swiper');
+
+if (sliders) {
+    const swiper1 = new Swiper(sliders, {
+        pagination: {
+            el: '.swiper-pagination',
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}

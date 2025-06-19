@@ -11,193 +11,217 @@
 </head>
 
 <body>
-    <header class="header container">
-        <div class="header__logo-wrap">
-            <img class="header__image" src="images/logo.png" alt="Логотип" width="50" height="50">
-            <h1 class="header__logo">HISTORIA</h1>
-        </div>
-        <div class="header__buttons">
-            <button class="header__button-one button" type="button">вход</button>
-            <button class="header__button-two button" type="button">регистрация</button>
-        </div>
-    </header>
 
-    <main class="main container">
-        <section class="search">
-            <h1 class="search__title">новостной исторический сайт</h1>
-            <form class="search__form" action="/" method="get">
-                <input class="search__input" type="search" name="text" placeholder="Название статьи">
-                <input class=" button" type="submit" value="Поиск">
-            </form>
-        </section>
-        <section class="navigation">
-            <button class="navigation__button button" type="button" data-id="all">все статьи</button>
-            <button class="navigation__button button" type="button" data-id="new">новое</button>
-            <button class="navigation__button button" type="button" data-id="pop">популярное</button>
-        </section>
-        <section class="articles">
-            <div class="articles__menu">
-                <a class="articles__item all" href="#">
-                    <img class="articles__images" src="images/atsteki.jpg" alt="Ацтеки" width="300" height="300">
-                    <h2 class="articles__name">Статья 1</h2>
-                    <p class="articles__text">Мезоамериканская культура народа науа, процветавшая в центральной Мексике в постклассический период с 1300 по 1521 год.</p>
-                </a>
-                <a class="articles__item all" href="#">
-                    <img class="articles__images" src="images/russ_pravda.jpg" alt="Русская правда" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 2</h2>
-                    <p class="articles__text">Сборник правовых норм Киевской Руси, датированный различными годами, начиная с 1016 года, древнейший русский правовой кодекс.</p>
-                </a>
-                <a class="articles__item all" href="#">
-                    <img class="articles__images" src="images/caravella.webp" alt="Каравелла" width="300" height="300">
-                    <h2 class="articles__name">Статья 3</h2>
-                    <p class="articles__text">Тип парусного судна, распространённый в Европе, особенно в Португалии и Испании, во второй половине XV — начале XVII века.</p>
-                </a>
-            </div>
-            <div class="articles__menu">
-                <a class="articles__item all new" href="#">
-                    <img class="articles__images" src="images/rurik.jpg" alt="Рюрик" , width=" 300" height="300">
-                    <h2 class="articles__name">Статья 4</h2>
-                    <p class="articles__text">Согласно русским летописям, варяг и первый правитель Руси и родоначальник русской княжеской, ставшей впоследствии царской, династии Рюриковичей.</p>
-                </a>
-                <a class="articles__item all new" href="#">
-                    <img class="articles__images" src="images/drakkar.webp" alt="Драккар" width="300" height="300">
-                    <h2 class="articles__name">Статья 5</h2>
-                    <p class="articles__text">Узкая парусно-гребная ладья викингов, с высоко поднятыми носом и кормой.</p>
-                </a>
-                <a class="articles__item all new" href="#">
-                    <img class="articles__images" src="images/picti.jpg" alt="Пикты" width="300" height="300">
-                    <h2 class="articles__name">Статья 6</h2>
-                    <p class="articles__text">Союз кельтоязычных народов, живших на северо-востоке современной Шотландии во времена позднего Железного века Британии и Раннего Средневековья.</p>
-                </a>
-            </div>
-            <div class="articles__menu link">
-                <a class="articles__item all pop" href="#">
-                    <img class="articles__images" src="images/constantin_v.png" alt="Император Константин" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 7</h2>
-                    <p class="articles__text">Римский император с 306 по 337 год, объявивший христианство государственной религией и разделивший страну на две части.</p>
-                </a>
-                <a class="articles__item all pop" href="#">
-                    <img class="articles__images" src="images/leon_blum.jpg" alt="Леон Блюм" width="300" height="300">
-                    <h2 class="articles__name">Статья 8</h2>
-                    <p class="articles__text">Французский политик, первый социалист и еврей во главе французского правительства, боровшийся с немецким влиянием.</p>
-                </a>
-                <a class="articles__item all pop" href="#">
-                    <img class="articles__images" src="images/semilrtka.jpg" alt="Семилетняя война" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 9</h2>
-                    <p class="articles__text">Крупный военный конфликт XVIII века, один из самых масштабных конфликтов Нового времени, положивший начало созданию первых правил ведения войны.</p>
-                </a>
-            </div>
-            <div class="articles__menu">
-                <a class="articles__item all new" href="#">
-                    <img class="articles__images" src="images/bismark.jpg" alt="Отто фон Бисмарк" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 10</h2>
-                    <p class="articles__text">Германский государственный и политический деятель, первый канцлер Германской империи, осуществивший план объединения Германии по малогерманскому пути.</p>
-                </a>
-                <a class="articles__item all new" href="#">
-                    <img class="articles__images" src="images/lenin.jpg" alt="Владимир Ленин" width="300" height="300">
-                    <h2 class="articles__name">Статья 11</h2>
-                    <p class="articles__text"> российский революционер, юрист, крупный теоретик марксизма, советский политический и государственный деятель, инициатор октябрьской революции.</p>
-                </a>
-                <a class="articles__item all new" href="#">
-                    <img class="articles__images" src="images/japan.jpeg" alt="Японская империя" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 12</h2>
-                    <p class="articles__text">Историческое японское государство, существовавшее с 1868 года до окончания Второй мировой войны и принятия современной конституции Японии 3 мая 1947 года.</p>
-                </a>
-            </div>
-            <div class="articles__menu">
-                <a class="articles__item all" href="#">
-                    <img class="articles__images" src="images/revolution.jpg" alt="Октябрьская революция" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 13</h2>
-                    <p class="articles__text">Вооружённое восстание в Петрограде в октябре 1917 года, итогом которой стало свержение Временного правительства и установление советской власти.</p>
-                </a>
-                <a class="articles__item all" href="#">
-                    <img class="articles__images" src="images/katya.jpg" alt="Екатерина I" width="300" height="300">
-                    <h2 class="articles__name">Статья 14</h2>
-                    <p class="articles__text">Супруга императора Петра I, коронованная в 1725 как самодержавной императрицей. Первая женщина на российском троне.</p>
-                </a>
-                <a class="articles__item all" href="#">
-                    <img class="articles__images" src="images/tevton.png" alt="Тевтонский орден" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 15</h2>
-                    <p class="articles__text">Католический духовно-рыцарский военный орден, основанный германскими крестоносцами в конце XII века.</p>
-                </a>
-            </div>
-            <div class="articles__menu link">
-                <a class="articles__item all pop" href="#">
-                    <img class="articles__images" src="images/gangut.webp" alt="Гангутское сражение" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 16</h2>
-                    <p class="articles__text">Морское сражение Северной войны, состоявшееся 27 июля 1714 года у мыса Гангут в Балтийском море между русским и шведским флотами.</p>
-                </a>
-                <a class="articles__item all new pop" href="#">
-                    <img class="articles__images" src="images/tsusima.jpg" alt="Цусимское сражение" width="300"
-                        height="300">
-                    <h2 class="articles__name">Статья 17</h2>
-                    <p class="articles__text">Морская битва произошедшая в 1905 года в районе острова Цусима, в которой российская 2-я эскадра флота Тихого океана потерпела поражение от японского флота.</p>
-                </a>
-            </div>
-            <button class="articles__button">еще</button>
-        </section>
-    </main>
-
-    <footer class="footer container">
-        <p class="footer__logo"> © Historia 2025</p>
-        <ul class="footer__menu">
-            <li class="footer__item">
-                <a class="footer__link" href="#">
-                    <img class="footer__images" src="images/icon_vk.jpg" alt="ВКонтакте" width="45" height="45">
-                </a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">
-                    <img class="footer__images" src="images/icon_telegram.jpg" alt="Телеграм" width="45" height="45">
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-    <div class="registration-one" hidden>
-        <div class="form-dialog">
-            <section class="form">
-                <div class="form__action-one">
-                    <h2 class="form__title-one">ВХОД</h2>
-                    <button class="application__close-one" type="button">
-                        <img class="form__images" src="images/dont_log_in.jpg" alt="Отмена" width="45" height="45">
-                    </button>
-                </div>
-                <div class="form__input-wrap-one">
-                    <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
-                    <input class="form__input" type="password" name="password" placeholder="Пароль" required>
-                    <button class="form__button button">Войти</button>
-                    <button class="form__button button">Нет аккаунта</button>
-                </div>
-            </section>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
         </div>
     </div>
 
-    <div class="registration-two" hidden>
-        <div class="form-dialog">
-            <section class="form">
-                <div class="form__action-two">
-                    <h2 class="form__title-two">РЕГИСТРАЦИЯ</h2>
-                    <button class="application__close-two" type="button">
-                        <img class="form__images" src="images/dont_log_in.jpg" alt="Отмена" width="45" height="45">
-                    </button>
-                    <div class="form__input-wrap-two">
-                        <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
-                        <input class="form__input" type="password" name="password" placeholder="Пароль" required>
-                        <button class="form__button button">Зарегистрироваться</button>
-                        <button class="form__button button">Есть аккаунт</button>
+    <div class="content">
+
+        <header class="header container">
+            <div class="header__logo-wrap">
+                <img class="header__image" src="images/logo.png" alt="Логотип" width="50" height="50">
+                <h1 class="header__logo">HISTORIA</h1>
+            </div>
+            <div class="header__buttons">
+                <button class="header__button-one button" type="button">вход</button>
+                <button class="header__button-two button" type="button">регистрация</button>
+            </div>
+        </header>
+    
+        <main class="main container">
+            <section class="search">
+                <h1 class="search__title">новостной исторический сайт</h1>
+                <form class="search__form" action="/" method="get">
+                    <input class="search__input" type="search" name="text" placeholder="Название статьи">
+                    <input class=" button" type="submit" value="Поиск">
+                </form>
+            </section>
+
+            <section class="swiper mySwiper">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/swiper1.jpg" alt="slide 1" class="swiper-slide-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/swiper2.jpg" alt="slide 2" class="swiper-slide-image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/swiper3.jpg" alt="slide 3" class="swiper-slide-image">
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </section>
+
+            <section class="navigation">
+                <button class="navigation__button button" type="button" data-id="all">все статьи</button>
+                <button class="navigation__button button" type="button" data-id="new">новое</button>
+                <button class="navigation__button button" type="button" data-id="pop">популярное</button>
+            </section>
+            <section class="articles">
+                <div class="articles__menu">
+                    <!-- <a class="articles__item all" href="#">
+                        <img class="articles__images" src="images/atsteki.jpg" alt="Ацтеки" width="300" height="300">
+                        <h2 class="articles__name">Статья 1</h2>
+                        <p class="articles__text">Мезоамериканская культура народа науа, процветавшая в центральной Мексике в постклассический период с 1300 по 1521 год.</p>
+                    </a>
+                    <a class="articles__item all" href="#">
+                        <img class="articles__images" src="images/russ_pravda.jpg" alt="Русская правда" width="300" height="300">
+                        <h2 class="articles__name">Статья 2</h2>
+                        <p class="articles__text">Сборник правовых норм Киевской Руси, датированный различными годами, начиная с 1016 года, древнейший русский правовой кодекс.</p>
+                    </a>
+                    <a class="articles__item all" href="#">
+                        <img class="articles__images" src="images/caravella.webp" alt="Каравелла" width="300" height="300">
+                        <h2 class="articles__name">Статья 3</h2>
+                        <p class="articles__text">Тип парусного судна, распространённый в Европе, особенно в Португалии и Испании, во второй половине XV — начале XVII века.</p>
+                    </a> -->
+                </div>
+                <div class="articles__menu">
+                    <a class="articles__item all new" href="#">
+                        <img class="articles__images" src="images/rurik.jpg" alt="Рюрик" width="300" height="300">
+                        <h2 class="articles__name">Рюрик</h2>
+                        <p class="articles__text">Согласно русским летописям, варяг и первый правитель Руси и родоначальник русской княжеской, ставшей впоследствии царской, династии Рюриковичей.</p>
+                    </a>
+                    <a class="articles__item all new" href="#">
+                        <img class="articles__images" src="images/drakkar.webp" alt="Драккар" width="300" height="300">
+                        <h2 class="articles__name">Драккар</h2>
+                        <p class="articles__text">Узкая парусно-гребная ладья викингов, с высоко поднятыми носом и кормой.</p>
+                    </a>
+                    <a class="articles__item all new" href="#">
+                        <img class="articles__images" src="images/picti.jpg" alt="Пикты" width="300" height="300">
+                        <h2 class="articles__name">Пикты</h2>
+                        <p class="articles__text">Союз кельтоязычных народов, живших на северо-востоке современной Шотландии во времена позднего Железного века Британии и Раннего Средневековья.</p>
+                    </a>
+                </div>
+                <div class="articles__menu link">
+                    <a class="articles__item all pop" href="#">
+                        <img class="articles__images" src="images/constantin_v.png" alt="Император Константин" width="300" height="300">
+                        <h2 class="articles__name">Император Константин</h2>
+                        <p class="articles__text">Римский император с 306 по 337 год, объявивший христианство государственной религией и разделивший страну на две части.</p>
+                    </a>
+                    <a class="articles__item all pop" href="#">
+                        <img class="articles__images" src="images/leon_blum.jpg" alt="Леон Блюм" width="300" height="300">
+                        <h2 class="articles__name">Леон Блюм</h2>
+                        <p class="articles__text">Французский политик, первый социалист и еврей во главе французского правительства, боровшийся с немецким влиянием.</p>
+                    </a>
+                    <a class="articles__item all pop" href="#">
+                        <img class="articles__images" src="images/semilrtka.jpg" alt="Семилетняя война" width="300" height="300">
+                        <h2 class="articles__name">Семилетняя война</h2>
+                        <p class="articles__text">Крупный военный конфликт XVIII века, один из самых масштабных конфликтов Нового времени, положивший начало созданию первых правил ведения войны.</p>
+                    </a>
+                </div>
+                <div class="articles__menu">
+                    <a class="articles__item all new" href="#">
+                        <img class="articles__images" src="images/bismark.jpg" alt="Отто фон Бисмарк" width="300" height="300">
+                        <h2 class="articles__name">Отто фон Бисмарк</h2>
+                        <p class="articles__text">Германский государственный и политический деятель, первый канцлер Германской империи, осуществивший план объединения Германии по малогерманскому пути.</p>
+                    </a>
+                    <a class="articles__item all new" href="#">
+                        <img class="articles__images" src="images/lenin.jpg" alt="Владимир Ленин" width="300" height="300">
+                        <h2 class="articles__name">Владимир Ленин</h2>
+                        <p class="articles__text"> российский революционер, юрист, крупный теоретик марксизма, советский политический и государственный деятель, инициатор октябрьской революции.</p>
+                    </a>
+                    <a class="articles__item all new" href="#">
+                        <img class="articles__images" src="images/japan.jpeg" alt="Японская империя" width="300" height="300">
+                        <h2 class="articles__name">Японская империя</h2>
+                        <p class="articles__text">Историческое японское государство, существовавшее с 1868 года до окончания Второй мировой войны и принятия современной конституции Японии 3 мая 1947 года.</p>
+                    </a>
+                </div>
+                <div class="articles__menu">
+                    <a class="articles__item all" href="#">
+                        <img class="articles__images" src="images/revolution.jpg" alt="Октябрьская революция" width="300" height="300">
+                        <h2 class="articles__name">Октябрьская революция</h2>
+                        <p class="articles__text">Вооружённое восстание в Петрограде в октябре 1917 года, итогом которой стало свержение Временного правительства и установление советской власти.</p>
+                    </a>
+                    <a class="articles__item all" href="#">
+                        <img class="articles__images" src="images/katya.jpg" alt="Екатерина I" width="300" height="300">
+                        <h2 class="articles__name">Екатерина I</h2>
+                        <p class="articles__text">Супруга императора Петра I, коронованная в 1725 как самодержавной императрицей. Первая женщина на российском троне.</p>
+                    </a>
+                    <a class="articles__item all" href="#">
+                        <img class="articles__images" src="images/tevton.png" alt="Тевтонский орден" width="300" height="300">
+                        <h2 class="articles__name">Тевтонский орден</h2>
+                        <p class="articles__text">Католический духовно-рыцарский военный орден, основанный германскими крестоносцами в конце XII века.</p>
+                    </a>
+                </div>
+                <div class="articles__menu link">
+                    <a class="articles__item all pop" href="#">
+                        <img class="articles__images" src="images/gangut.webp" alt="Гангутское сражение" width="300" height="300">
+                        <h2 class="articles__name">Гангутское сражение</h2>
+                        <p class="articles__text">Морское сражение Северной войны, состоявшееся 27 июля 1714 года у мыса Гангут в Балтийском море между русским и шведским флотами.</p>
+                    </a>
+                    <a class="articles__item all new pop" href="#">
+                        <img class="articles__images" src="images/tsusima.jpg" alt="Цусимское сражение" width="300" height="300">
+                        <h2 class="articles__name">Цусимское сражение</h2>
+                        <p class="articles__text">Морская битва произошедшая в 1905 года в районе острова Цусима, в которой российская 2-я эскадра флота Тихого океана потерпела поражение от японского флота.</p>
+                    </a>
+                </div>
+                <button class="articles__button">еще</button>
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <p class="footer__logo"> © Historia 2025</p>
+            <ul class="footer__menu">
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        <img class="footer__images" src="images/icon_vk.jpg" alt="ВКонтакте" width="45" height="45">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#">
+                        <img class="footer__images" src="images/icon_telegram.jpg" alt="Телеграм" width="45" height="45">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    
+        <div class="registration-one" hidden>
+            <div class="form-dialog">
+                <section class="form">
+                    <div class="form__action-one">
+                        <h2 class="form__title-one">ВХОД</h2>
+                        <button class="application__close-one" type="button">
+                            <img class="form__images" src="images/dont_log_in.jpg" alt="Отмена" width="45" height="45">
+                        </button>
+                    </div>
+                    <div class="form__input-wrap-one">
+                        <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
+                        <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+                        <button class="form__button button">Войти</button>
+                        <button class="form__button button">Нет аккаунта</button>
+                    </div>
+                </section>
+            </div>
         </div>
+    
+        <div class="registration-two" hidden>
+            <div class="form-dialog">
+                <section class="form">
+                    <div class="form__action-two">
+                        <h2 class="form__title-two">РЕГИСТРАЦИЯ</h2>
+                        <button class="application__close-two" type="button">
+                            <img class="form__images" src="images/dont_log_in.jpg" alt="Отмена" width="45" height="45">
+                        </button>
+                        <div class="form__input-wrap-two">
+                            <input class="form__input" type="tel" name="phone" placeholder="Логин" required>
+                            <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+                            <button class="form__button button">Зарегистрироваться</button>
+                            <button class="form__button button">Есть аккаунт</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
     </div>
 
     <script src="js/script.js"></script>
