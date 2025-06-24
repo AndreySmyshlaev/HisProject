@@ -135,3 +135,47 @@ if (articles) {
     }
 
 }
+
+
+
+// * Код для объекта (Задание 3.5)
+
+const articles = document.querySelector(".articles");
+if (articles) {
+    const articlesMenu = articles.querySelector(".articles__menu");
+
+    const articlesData = {
+        articles1: {
+            images: "images/atsteki.jpg",
+            name: "Ацтеки",
+            text: "Мезоамериканская культура народа науа, процветавшая в центральной Мексике в постклассический период с 1300 по 1521 год.",
+        },
+        articles2: {
+            images: "images/russ_pravda.jpg",
+            name: "Русская правда",
+            text: "Сборник правовых норм Киевской Руси, датированный различными годами, начиная с 1016 года, древнейший русский правовой кодекс.",
+        },
+        articles3: {
+            images: "images/caravella.webp",
+            name: "Каравелла",
+            text: "Тип парусного судна, распространённый в Европе, особенно в Португалии и Испании, во второй половине XV — начале XVII века.",
+        },
+    }
+
+    const createCard = (images, name, text) => {
+        const card = `
+        <a class="articles__item all" href="#">
+            <img class="articles__images" src="${images}" alt="Фото" width="300" height="300">
+            <h2 class="articles__name">${name}</h2>
+            <p class="articles__text">${text}</p>
+        </a>
+    `;
+        return card;
+    }
+
+    for (const cardKey in articlesData) {
+        const card = articlesData[cardKey];
+        const cardElement = createCard(card.images, card.name, card.text);
+        articlesMenu.insertAdjacentHTML('beforeend', cardElement);
+    }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": [
+            "images/scriptor1.jpg",
+            "images/ar1.jpg"
+        ],
+        "imageAlt": "Фото",
+        "imageWidth": 310
+    },
+    {
+        "imageUrl": [
+            "images/scriptor2.jpg",
+            "images/ar2.jpg"
+        ],
+        "imageAlt": "Фото",
+        "imageWidth": 310
+    },
+    {
+        "imageUrl": [
+            "images/scriptor3.jpg",
+            "images/ar3.jpg"
+        ],
+        "imageAlt": "Фото",
+        "imageWidth": 310
+    }
+]

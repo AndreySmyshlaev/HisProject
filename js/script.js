@@ -71,11 +71,6 @@ exitModalButton.addEventListener("click", () => {
 
 
 
-// * Код для массива (название статей) (Задание 3.4)
-// * УБРАН В СВЯЗИ С НЕНАДОБНОСТЬЮ В README.MD
-
-
-
 // * Фильтрация карточек (статей)
 
 const navigation = document.querySelectorAll(".navigation");
@@ -123,48 +118,6 @@ filter()
 
 
 
-// * Код для объекта (Задание 3.5)
-
-const articles = document.querySelector(".articles");
-if (articles) {
-    const articlesMenu = articles.querySelector(".articles__menu");
-
-    const articlesData = {
-        articles1: {
-            images: "images/atsteki.jpg",
-            name: "Ацтеки",
-            text: "Мезоамериканская культура народа науа, процветавшая в центральной Мексике в постклассический период с 1300 по 1521 год.",
-        },
-        articles2: {
-            images: "images/russ_pravda.jpg",
-            name: "Русская правда",
-            text: "Сборник правовых норм Киевской Руси, датированный различными годами, начиная с 1016 года, древнейший русский правовой кодекс.",
-        },
-        articles3: {
-            images: "images/caravella.webp",
-            name: "Каравелла",
-            text: "Тип парусного судна, распространённый в Европе, особенно в Португалии и Испании, во второй половине XV — начале XVII века.",
-        },
-    }
-
-    const createCard = (images, name, text) => {
-        const card = `
-        <a class="articles__item all" href="#">
-            <img class="articles__images" src="${images}" alt="Фото" width="300" height="300">
-            <h2 class="articles__name">${name}</h2>
-            <p class="articles__text">${text}</p>
-        </a>
-    `;
-        return card;
-    }
-
-    for (const cardKey in articlesData) {
-        const card = articlesData[cardKey];
-        const cardElement = createCard(card.images, card.name, card.text);
-        articlesMenu.insertAdjacentHTML('beforeend', cardElement);
-    }
-}
-
 // * Код для предзагрузчика
 
 const preloader = document.querySelector(".preloader");
@@ -195,4 +148,68 @@ if (sliders) {
             prevEl: '.swiper-button-prev',
         },
     });
+}
+
+
+
+const cardsImages = document.querySelector(".images");
+if (cardsImages) {
+    const cardListImages = cardsImages.querySelector(".images__list");
+
+    // Пример URL для получения данных с сервера
+    const apiUrl = "images.json";
+
+    // Функция для создания карточки
+    const createCard = (imageUrl, imageAlt, imageWidth) => {
+        // Шаблонные строки и подстановки
+        const image = `
+        <li class="images__item">
+            <img class="images__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
+            <img class="images__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
+        </li>
+    `;
+
+        return image;
+    };
+
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((images) => {
+            console.log(images); // Данные
+            console.log(typeof images); // Тип полученных данных
+
+            images.forEach((item) => {
+                const cardElement = createCard(
+                    item.imageUrl,
+                    item.imageAlt,
+                    item.imageWidth
+                );
+                cardListImages.insertAdjacentHTML("beforeend", cardElement);
+            });
+            const pictures = document.querySelectorAll(".images__picture");
+            if (pictures) {
+                // Перебираем каждое изображение
+                pictures.forEach((picture) => {
+                    picture.addEventListener("click", () => {
+                        // Получаем родительский элемент (li)
+                        const parentItem = picture.parentElement;
+
+                        // Получаем все изображения в родительском элементе
+                        const parentPictures =
+                            parentItem.querySelectorAll(".images__picture");
+
+                        // Переключаем видимость изображений
+                        parentPictures.forEach((parentPictures) => {
+                            if (parentPictures !== picture) {
+                                parentPictures.style.display = "block"; // Показываем другое изображение
+                            } else {
+                                parentPictures.style.display = "none"; // Скрываем текущее изображение
+                            }
+                        });
+                    });
+                });
+            }
+
+        });
+
 }
